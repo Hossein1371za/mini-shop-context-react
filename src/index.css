@@ -1,10 +1,15 @@
+@import url('https://v1.fontapi.ir/css/Vazir:100;500;700');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
     outline: none;
     text-decoration: none;
+    direction: rtl;
+    font-family: "vazir";
+    list-style: none;
+    text-decoration: none !important;
 }
 
 

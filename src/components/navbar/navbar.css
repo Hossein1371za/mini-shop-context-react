@@ -1,0 +1,26 @@
+.navbar{
+    width: 100%;
+    background: #1b1818;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+.toggle-menu{
+    display: none;
+    font-size: 25px;
+    color: #eedede;
+}
+.nav-item, .logo-item{
+    color: #eedede;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.nav-list .active{
+    color: rgb(168, 241, 174);
+}
+
