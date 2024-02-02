@@ -17,7 +17,24 @@
     font-size: 25px;
     color: #eedede;
 }
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    background: #d1cbcb;
+    padding: 5px 10px;
+    border-radius: 10px;font-size: 18px;
+}
+.form-group input{
+    border: none;
+    background: transparent;
+}
+.form-group span svg{
+    color: #888888;
 
+    cursor: pointer;
+}
 .nav-item,
 .logo-item {
     color: #eedede;
@@ -42,7 +59,7 @@
         background: #1b1818;
         transition: all .4s ease-in;
         padding: 20px;
-        z-index: -1;
+        z-index: 20;
     }
 
     .navbar ul a {
@@ -53,5 +70,8 @@
 
     .toggle-menu {
         display: block;
+    }
+    .form-group{
+        display: none;
     }
 }

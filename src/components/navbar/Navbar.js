@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import "./navbar.css";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const styleMenu = {
-    top: openMenu ? "7%" : "-100%",
-  }
+    top: openMenu ? "9%" : "-100%",
+  };
   return (
     <nav className="navbar">
       <div className="wrapper">
@@ -18,6 +18,11 @@ const Navbar = () => {
         >
           {openMenu ? <FaTimes /> : <FaBars />}
         </NavLink>
+        <div className="logo">
+          <NavLink className="logo-item" to="/">
+            آنلاین بوک
+          </NavLink>
+        </div>
         <ul style={styleMenu}>
           <NavLink className="nav-item" to="/">
             خانه
@@ -35,11 +40,12 @@ const Navbar = () => {
             ثبت نام
           </NavLink>
         </ul>
-        <div className="logo">
-          <NavLink className="logo-item" to="/">
-            آنلاین بوک
-          </NavLink>
-        </div>
+        <form className="form-group">
+          <input type="text" placeholder="جستوجو کتاب" />
+          <span>
+            <FaSearch />
+          </span>
+        </form>
       </div>
     </nav>
   );
