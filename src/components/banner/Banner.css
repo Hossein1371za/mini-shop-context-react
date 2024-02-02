@@ -64,4 +64,8 @@
 .ios{
     color: rgb(107, 94, 94);
 }
-
+@media (max-width: 768px){
+    .banner h1{
+        font-size: 2rem;
+    }
+}

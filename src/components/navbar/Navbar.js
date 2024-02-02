@@ -6,7 +6,7 @@ import "./navbar.css";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const styleMenu = {
-    top: openMenu ? "9%" : "-100%",
+    top: openMenu ? "7%" : "-100%",
   };
   return (
     <nav className="navbar">
