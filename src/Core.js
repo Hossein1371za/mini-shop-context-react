@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
 import Products from "./components/products/Products";
 import Home from "./components/home/Home";
+import Details from "./components/details/Details";
 
 
 
@@ -15,7 +16,8 @@ const Core = () => {
         <Banner />
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path="/products-item" element={<Products />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </>
