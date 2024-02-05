@@ -1,3 +1,7 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .eg-book{
     background: #504c4c;
     color: #fff;
