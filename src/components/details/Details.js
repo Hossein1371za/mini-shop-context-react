@@ -1,12 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect} from "react";
 import { DataContext } from "../context/Context";
 import "./Details.css"
+import axios from "axios"
+import {useParams} from "react-router-dom"
+
+
 
 const Details = () => {
   const value = useContext(DataContext);
-  const [detailsBook, setDetailsBook] = value.detailsBook;
   
-  console.log(detailsBook);
+  const [detailsBook,setDetailsBook]=value.detailsBook
+  const {id} = useParams()
+  const fetchDetails = async () => {
+    await axios.get(`https://example-data.draftbit.com/books/${id}`)
+    .then((res)=>setDetailsBook(res.data))
+    .catch((err)=>console.log(err.data))
+  };
+
+
+  
+  useEffect(() => {
+    fetchDetails();
+  }, []);
+  
+
+  
   return (
     <div className="singleData-card" key={detailsBook.id}>
       <div className="singleData-title">

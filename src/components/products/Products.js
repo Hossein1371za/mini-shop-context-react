@@ -3,10 +3,13 @@ import { DataContext } from "../context/Context";
 import { Link } from "react-router-dom";
 import "./Product.css";
 
+
+
 const Products = () => {
   const value = useContext(DataContext);
   const [products, setProducts] = value.products;
   const [visible, setVisible] = useState(11);
+  const fetchDetails = value.fetchDetails
   const showMoreItem = () => {
     setVisible(visible + 3);
   };
@@ -27,6 +30,7 @@ const Products = () => {
                 <div className="numpage-rate">
                   <Link
                     className="product-details"
+                    onClick={()=>fetchDetails()}
                     to={`/products/${product.id}`}
                   >
                     مشاهده جزییات
