@@ -19,11 +19,27 @@ export const DataProvider = (props) => {
     .catch((err)=>console.log(err.data))
   }
   const [detailsBook,setDetailsBook] = useState("")
+  const [library,setLibrary] = useState([])
+  const addToLibrary =(id)=>{
+      const check = library.every(item=>{
+        return item.id !== id
+      })
+        if(check){
+          const data = products.filter(product =>{
+            return product.id === id
+           })
+           setLibrary([...library,...data])
+        }else{
+          alert("این کتاب در کتابخانه شما موجود است.")
+        }
+     }
   
 
   const value = {
     products: [products, setProducts],
     detailsBook:[detailsBook,setDetailsBook],
+    addToLibrary,
+    library :[library,setLibrary]
   };
   return (
     <DataContext.Provider value={value}>{props.children}</DataContext.Provider>

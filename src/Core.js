@@ -6,6 +6,7 @@ import Products from "./components/products/Products";
 import Home from "./components/home/Home";
 import Details from "./components/details/Details";
 import Footer from "./components/footer/Footer";
+import Library from "./components/library/Library";
 
 
 
@@ -19,6 +20,7 @@ const Core = () => {
           <Route path='/' element={<Home/>}/>
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Details />} />
+          <Route path="/your-library" element={<Library />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

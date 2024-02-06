@@ -10,6 +10,7 @@ const Products = () => {
   const [products, setProducts] = value.products;
   const [visible, setVisible] = useState(11);
   const fetchDetails = value.fetchDetails
+  const addToLibrary = value.addToLibrary
   const showMoreItem = () => {
     setVisible(visible + 3);
   };
@@ -37,7 +38,7 @@ const Products = () => {
                   </Link>
                   <p>امتیاز:{product.rating}</p>
                 </div>
-                <button className="add-book">اضافه کردن به کتابخانه</button>
+                <button className="add-book" onClick={()=>addToLibrary(product.id)}>اضافه کردن به کتابخانه</button>
               </div>
             );
           })}
