@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background: #1b1818;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+.footer h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #8c908d;
+    padding: 10px 0;
+}
+.footer p{
+    font-size: 18px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.footer p:hover{
+    color: rgb(168, 241, 174);
+}
+.social svg{
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.social svg:hover{
+    color:rgb(168, 241, 174);
+
+}

@@ -5,6 +5,7 @@ import Banner from "./components/banner/Banner";
 import Products from "./components/products/Products";
 import Home from "./components/home/Home";
 import Details from "./components/details/Details";
+import Footer from "./components/footer/Footer";
 
 
 
@@ -19,6 +20,7 @@ const Core = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Details />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
