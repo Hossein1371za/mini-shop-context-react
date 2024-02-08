@@ -1,37 +1,32 @@
-import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import data from "./data";
-const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
 
-const Slider = () => {
+import { productData, responsive } from "./data";
+import ItemSlide from "./ItemSlide";
+import "./Slider.css";
+
+export default function Slider() {
+  const product = productData.map((item) => (
+    <div key={item.id}>
+      <ItemSlide
+      name={item.name}
+      url={item.imageurl}
+      price={item.price}
+      description={item.description}
+    />
+    </div>
+  ));
+
   return (
-    <Carousel responsive={responsive}>
-      {data.map((item) => (
-        <div key={item.id}>
-          <img src={item.image} alt="." />
-        </div>
-      ))}
-    </Carousel>
+    <div className="App">
+      <Carousel
+        showDots={true}
+        responsive={responsive}
+        autoPlay={true}
+        infinite={true}
+      >
+        {product}
+      </Carousel>
+    </div>
   );
-};
-
-export default Slider;
+}
