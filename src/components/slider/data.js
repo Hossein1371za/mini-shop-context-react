@@ -62,18 +62,4 @@ export const productData = [
     price: "$149.99",
     description: "Some text about the product..",
   },
-  // {
-  //   id: 7,
-  //   imageurl: "book/3.jpg",
-  //   name: "Sunglasses",
-  //   price: "$38.99",
-  //   description: "Some text about the product..",
-  // },
-  // {
-  //   id: 8,
-  //   imageurl:"book/1.jpg",
-  //   name: "Dove cream",
-  //   price: "$49.99",
-  //   description: "Some text about the product..",
-  // },
 ];
