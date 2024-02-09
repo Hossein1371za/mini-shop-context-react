@@ -6,10 +6,10 @@ const ItemSlide = (props) => {
     <div className="card">
       <img className="product--image" src={props.url} alt="product image" />
       <h2>{props.name}</h2>
-      <p className="price">{props.price}</p>
-      <p>{props.description}</p>
+      <p className="price">{props.page}</p>
+      <p>{props.Author}</p>
       <p>
-        <button>Add to Cart</button>
+        <button>افزودن به کتابخانه</button>
       </p>
     </div>
   );

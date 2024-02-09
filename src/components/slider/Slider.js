@@ -11,19 +11,19 @@ export default function Slider() {
       <ItemSlide
       name={item.name}
       url={item.imageurl}
-      price={item.price}
-      description={item.description}
+      page={item.page}
+      Author={item.Author}
     />
     </div>
   ));
 
   return (
-    <div className="App">
+    <div className="slider">
       <Carousel
         showDots={true}
         responsive={responsive}
         autoPlay={true}
-        infinite={true}
+        // infinite={true}
       >
         {product}
       </Carousel>

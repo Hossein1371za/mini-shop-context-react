@@ -7,6 +7,7 @@ import Home from "./components/home/Home";
 import Details from "./components/details/Details";
 import Footer from "./components/footer/Footer";
 import Library from "./components/library/Library";
+import Login from "./components/aouth/Login";
 
 
 
@@ -21,6 +22,7 @@ const Core = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Details />} />
           <Route path="/your-library" element={<Library />} />
+          <Route path="/login" element={<Login/> } />
         </Routes>
         <Footer/>
       </BrowserRouter>

@@ -33,13 +33,18 @@ export const DataProvider = (props) => {
           alert("این کتاب در کتابخانه شما موجود است.")
         }
      }
+     const deleteItem =(id)=>{
+      const newLibrary= library.filter(item => item.id !== id)
+      setLibrary(newLibrary)
+     }
   
 
   const value = {
     products: [products, setProducts],
     detailsBook:[detailsBook,setDetailsBook],
     addToLibrary,
-    library :[library,setLibrary]
+    library :[library,setLibrary],
+    deleteItem
   };
   return (
     <DataContext.Provider value={value}>{props.children}</DataContext.Provider>

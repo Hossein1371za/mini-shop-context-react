@@ -5,6 +5,7 @@ import "./Library.css"
 
 const Library = () => {
     const value = useContext(DataContext)
+    const deleteItem= value.deleteItem
     const [library]= value.library
   {
     if (library.length === 0) {
@@ -32,6 +33,7 @@ const Library = () => {
                 </Link>
                 <button
                   className="delete-book"
+                  onClick={()=>deleteItem(item.id)}
                 >
                   حذف از کتابخانه
                 </button>

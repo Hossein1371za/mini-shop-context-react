@@ -40,7 +40,7 @@ const Navbar = () => {
             ثبت نام
           </NavLink>
         </ul>
-        <form className="form-group">
+        <form className="form-group-navbar">
           <input type="text" placeholder="جستوجو کتاب" />
           <span>
             <FaSearch />

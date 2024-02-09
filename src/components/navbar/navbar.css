@@ -17,7 +17,7 @@
     font-size: 25px;
     color: #eedede;
 }
-.form-group{
+.form-group-navbar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,11 +26,11 @@
     padding: 5px 10px;
     border-radius: 10px;font-size: 18px;
 }
-.form-group input{
+.form-group-navbar input{
     border: none;
     background: transparent;
 }
-.form-group span svg{
+.form-group-navbar span svg{
     color: #888888;
 
     cursor: pointer;
