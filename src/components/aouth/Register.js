@@ -5,9 +5,9 @@ import { DataContext } from "../context/Context";
 
 const Register = () => {
   const value = useContext(DataContext)
-  const [name,setName] = value.name
-  const [email,setEmail] = value.email
-  const [password,setPassword] = value.password
+  const [nameReg,setNameReg] = value.nameReg
+  const [emailReg,setEmailReg] = value.emailReg
+  const [passwordReg,setPasswordReg] = value.passwordReg
   const handleRegister = value.handleRegister
   
   return (
@@ -22,7 +22,7 @@ const Register = () => {
                 name="name"
                 type="text"
                 placeholder="نام کاربری"
-                onChange={(e)=>setName(e.target.value)}
+                onChange={(e)=>setNameReg(e.target.value)}
               />
             </div>
             <div className="form-group">
@@ -31,7 +31,7 @@ const Register = () => {
                 name="email"
                 type="email"
                 placeholder="ایمیل..."
-                onChange={(e)=>setEmail(e.target.value)}
+                onChange={(e)=>setEmailReg(e.target.value)}
               />
             </div>
             <div className="form-group">
@@ -40,7 +40,7 @@ const Register = () => {
                 name="password"
                 type="password"
                 placeholder="پسوورد..."
-                onChange={(e)=>setPassword(e.target.value)}
+                onChange={(e)=>setPasswordReg(e.target.value)}
               />
             </div>
             <div className="form-group">

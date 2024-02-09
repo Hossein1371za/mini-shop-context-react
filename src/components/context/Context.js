@@ -35,13 +35,12 @@ export const DataProvider = (props) => {
     const newLibrary = library.filter((item) => item.id !== id);
     setLibrary(newLibrary);
   };
-  const [name,setName] = useState("")
-  const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
+  const [nameReg,setNameReg] = useState("")
+  const [emailReg,setEmailReg] = useState("")
+  const [passwordReg,setPasswordReg] = useState("")
  
   const handleRegister = async (e) => {
     e.preventDefault();
-    console.log(name,email,password)
     // const data = {
     //   name,
     //   email,
@@ -57,6 +56,18 @@ export const DataProvider = (props) => {
     // }) 
     // .catch((err)=>console.log(err.data))
   };
+  const [emailLog,setEmailLog] = useState("")
+  const [passwordLog,setPasswordLog] = useState("")
+  const handleLog = async(e)=>{
+    e.preventDefault()
+      // const data = {
+    //   nameLog,
+    //   emailLog,
+    //   passwordLog,
+    // };
+    // await axios.post("API", data)
+
+  }
 
   const value = {
     products: [products, setProducts],
@@ -65,9 +76,12 @@ export const DataProvider = (props) => {
     library: [library, setLibrary],
     deleteItem,
     handleRegister,
-    name:[name,setName],
-    email:[email,setEmail],
-    password:[password,setPassword]
+    nameReg:[nameReg,setNameReg],
+    emailReg:[emailReg,setEmailReg],
+    passwordReg:[passwordReg,setPasswordReg],
+    nameLog:[emailLog,setEmailLog],
+    nameLog:[passwordLog,setPasswordLog],
+    handleLog
   };
   return (
     <DataContext.Provider value={value}>{props.children}</DataContext.Provider>
