@@ -41,6 +41,7 @@ export const DataProvider = (props) => {
  
   const handleRegister = async (e) => {
     e.preventDefault();
+    // for back end
     // const data = {
     //   name,
     //   email,
@@ -60,12 +61,20 @@ export const DataProvider = (props) => {
   const [passwordLog,setPasswordLog] = useState("")
   const handleLog = async(e)=>{
     e.preventDefault()
+    // for back end
       // const data = {
     //   nameLog,
     //   emailLog,
     //   passwordLog,
     // };
-    // await axios.post("API", data)
+    // axios.get("API/csrf").then(res=>{
+    //   axios.post("API",data)
+  //  .then(res =>{
+// your code
+  // })
+  // .catch(err=> your code)
+    //   }
+    // })
 
   }
 
