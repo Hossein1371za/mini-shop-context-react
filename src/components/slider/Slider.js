@@ -22,7 +22,7 @@ export default function Slider() {
       <Carousel
         showDots={true}
         responsive={responsive}
-        autoPlay={true}
+        // autoPlay={true}
         // infinite={true}
       >
         {product}

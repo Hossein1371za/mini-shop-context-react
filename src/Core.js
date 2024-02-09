@@ -8,9 +8,10 @@ import Details from "./components/details/Details";
 import Footer from "./components/footer/Footer";
 import Library from "./components/library/Library";
 import Login from "./components/aouth/Login";
+import Register from "./components/aouth/Register";
+import axios from "axios"
 
-
-
+axios.defaults.withCredentials = true
 const Core = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Core = () => {
           <Route path="/products/:id" element={<Details />} />
           <Route path="/your-library" element={<Library />} />
           <Route path="/login" element={<Login/> } />
+          <Route path="/register" element={<Register/> } />
         </Routes>
         <Footer/>
       </BrowserRouter>

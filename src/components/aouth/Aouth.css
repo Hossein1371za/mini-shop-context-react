@@ -54,7 +54,7 @@
     background-position-y: center;
 }
 .background-reg{
-    /* background-image: url("../assets/register.svg"); */
+    background-image: url("../../assets/register.svg");
     background-repeat: no-repeat;
     background-size: 45%;
     background-position-y: center;
