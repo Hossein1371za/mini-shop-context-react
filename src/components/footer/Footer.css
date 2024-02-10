@@ -31,7 +31,7 @@
     color:rgb(168, 241, 174);
 
 }
-@media only screen and (min-width: 768px) {
+@media  screen and (max-width: 768px) {
     .books,
     .about-us{
         width: 40%;
@@ -40,7 +40,7 @@
         margin-top: 40px;
     }
 }
-@media only screen and (max-width: 600px){
+@media  screen and (max-width: 600px){
     .footer{
         flex-direction: column;
         align-items: center;

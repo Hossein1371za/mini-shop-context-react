@@ -110,7 +110,7 @@
     box-shadow: 0 0 5px #277fe4;
 }
 
-@media only screen and (min-width: 768px) {
+@media  screen and (max-width: 768px) {
     .eg-book {
         width: 80%;
         margin: 30px auto;
@@ -121,7 +121,7 @@
         margin: 30px !important;
     }
 }
-@media only screen and (max-width: 600px){
+@media  screen and (max-width: 600px){
     .eg-book {
         width: 60%;
         margin: 30px auto;
