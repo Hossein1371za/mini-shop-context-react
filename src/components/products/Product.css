@@ -1,8 +1,9 @@
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.eg-book{
+
+.eg-book {
     background: #504c4c;
     color: #fff;
     padding: 10px 0;
@@ -11,13 +12,15 @@
     width: 30%;
     border-radius: 8px;
 }
-.products{
+
+.products {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.products-card{
+
+.products-card {
     width: calc(33.33% - 10px);
     display: flex;
     flex-direction: column;
@@ -26,30 +29,35 @@
     border: 1px solid #8d7f7f;
     box-shadow: 0 0 10px #1b1818;
 }
-.products-title h6{
+
+.products-title h6 {
     font-size: 15px;
     height: 30px;
     font-weight: bold;
     color: #464545;
-    margin:15px 0;
+    margin: 15px 0;
     text-align: center;
     padding: 10px;
-    
+
 }
-.product-img{
+
+.product-img {
     position: relative;
 }
-.product-img img{
+
+.product-img img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     transition: all .5s ease;
     cursor: pointer;
 }
-.product-img img:hover{
+
+.product-img img:hover {
     transform: scale(1.05);
 }
-.numpage-rate{
+
+.numpage-rate {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,13 +67,15 @@
     width: 100%;
     font-weight: bold;
 }
-.product-details{
+
+.product-details {
     border: 1px solid #1b1818;
     padding: 5px 10px;
     color: #1b1818;
     border-radius: 5px;
 }
-.add-book{
+
+.add-book {
     width: 90%;
     font-size: 20px;
     background: #252825;
@@ -77,10 +87,12 @@
     margin: 10px auto;
     cursor: pointer;
 }
-.add-book:hover{
+
+.add-book:hover {
     background: #1b1c1b;
 }
-.show-more{
+
+.show-more {
     width: 60%;
     font-size: 20px;
     padding: 10px 0;
@@ -92,7 +104,32 @@
     border-radius: 8px;
     outline: none;
 }
-.show-more:hover{
+
+.show-more:hover {
     background: #277fe4;
     box-shadow: 0 0 5px #277fe4;
+}
+
+@media only screen and (min-width: 768px) {
+    .eg-book {
+        width: 80%;
+        margin: 30px auto;
+        font-size: 25px;
+    }
+    .products-card {
+        width: 40% !important;
+        margin: 30px !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .eg-book {
+        width: 60%;
+        margin: 30px auto;
+        font-size: 20px;
+    }
+
+    .products-card {
+        width: 100% !important;
+        margin: 30px !important;
+    }
 }

@@ -70,7 +70,7 @@
     background-position-y: center;
 }
 
-@media (max-width:450px) {
+@media (max-width:600px) {
     .aouth {
         width: 100%;
     }
