@@ -15,7 +15,7 @@ const Register = () => {
       <div className="aouth-main background-reg">
         <div className="aouth">
           <h2>ثبت نام کنید</h2>
-          <form onSubmit={handleRegister()}>
+          <form onSubmit={handleRegister}>
             <div className="form-group">
               <label>نام کاربری</label>
               <input

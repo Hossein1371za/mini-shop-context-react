@@ -39,7 +39,7 @@ export const DataProvider = (props) => {
   const [emailReg,setEmailReg] = useState("")
   const [passwordReg,setPasswordReg] = useState("")
  
-  const handleRegister = async (e) => {
+  const handleRegister = (e) => {
     e.preventDefault();
     // for back end
     // const data = {
@@ -59,7 +59,7 @@ export const DataProvider = (props) => {
   };
   const [emailLog,setEmailLog] = useState("")
   const [passwordLog,setPasswordLog] = useState("")
-  const handleLog = async(e)=>{
+  const handleLog = (e)=>{
     e.preventDefault()
     // for back end
       // const data = {
@@ -88,8 +88,8 @@ export const DataProvider = (props) => {
     nameReg:[nameReg,setNameReg],
     emailReg:[emailReg,setEmailReg],
     passwordReg:[passwordReg,setPasswordReg],
-    nameLog:[emailLog,setEmailLog],
-    nameLog:[passwordLog,setPasswordLog],
+    emailLog:[emailLog,setEmailLog],
+    passwordLog:[passwordLog,setPasswordLog],
     handleLog
   };
   return (

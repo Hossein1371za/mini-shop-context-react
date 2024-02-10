@@ -12,7 +12,7 @@ const Login = () => {
       <div className="aouth-main background-log">
         <div className="aouth">
           <h2>وارد شوید</h2>
-          <form onSubmit={handleLog()}>
+          <form onSubmit={handleLog}>
             <div className="form-group">
               <label>ایمیل</label>
               <input

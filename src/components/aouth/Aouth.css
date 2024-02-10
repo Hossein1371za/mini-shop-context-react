@@ -1,37 +1,44 @@
-.aouth-main{
+.aouth-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
+    padding: 0 20px;
 }
-.aouth{
+
+.aouth {
     width: 40%;
     background: #342d2d;
     color: white;
     border-radius: 8px;
     padding: 20px;
 }
-.aouth h2{
+
+.aouth h2 {
     font-size: 25px;
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
     border-bottom: 1px solid #dcc7c7;
 }
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
 }
-.form-group label{
+
+.form-group label {
     font-size: 18px;
     padding: 10px 0;
 }
-.form-group input{
+
+.form-group input {
     font-size: 18px;
     padding: 10px;
 }
-.form-group button{
+
+.form-group button {
     width: 100%;
     margin: 30px 0;
     padding: 10px;
@@ -40,22 +47,36 @@
     font-size: 20px;
     border: none;
     outline: none;
-    border-radius:8px ;
+    border-radius: 8px;
     cursor: pointer;
     transition: all .3s ease;
 }
-.form-group button:hover{
+
+.form-group button:hover {
     background: #10882e;
 }
-.background-log{
+
+.background-log {
     background-image: url("../../assets/login.svg");
     background-repeat: no-repeat;
     background-size: 45%;
     background-position-y: center;
 }
-.background-reg{
+
+.background-reg {
     background-image: url("../../assets/register.svg");
     background-repeat: no-repeat;
     background-size: 45%;
     background-position-y: center;
+}
+
+@media (max-width:450px) {
+    .aouth {
+        width: 100%;
+    }
+
+    .background-log,
+    .background-reg {
+        background-image: none;
+    }
 }

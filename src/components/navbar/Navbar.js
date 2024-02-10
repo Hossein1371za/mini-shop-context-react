@@ -24,19 +24,19 @@ const Navbar = () => {
           </NavLink>
         </div>
         <ul style={styleMenu}>
-          <NavLink className="nav-item" to="/">
+          <NavLink onClick={()=>setOpenMenu(!openMenu)} className="nav-item" to="/">
             خانه
           </NavLink>
-          <NavLink className="nav-item" to="/products">
+          <NavLink onClick={()=>setOpenMenu(!openMenu)} className="nav-item" to="/products">
             محصولات
           </NavLink>
-          <NavLink className="nav-item" to="/your-library">
+          <NavLink onClick={()=>setOpenMenu(!openMenu)} className="nav-item" to="/your-library">
             کتابخانه شما
           </NavLink>
-          <NavLink className="nav-item" to="/login">
+          <NavLink onClick={()=>setOpenMenu(!openMenu)} className="nav-item" to="/login">
             ورود
           </NavLink>
-          <NavLink className="nav-item" to="/register">
+          <NavLink onClick={()=>setOpenMenu(!openMenu)} className="nav-item" to="/register">
             ثبت نام
           </NavLink>
         </ul>
